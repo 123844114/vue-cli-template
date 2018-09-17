@@ -5,17 +5,18 @@
  *
  * 描述 ：api接口工厂类
  */
+import axios from 'axios'
+import baseUrl from './config/baseUrl'
+import headersConfig from './config/headers'
 const apiFactory = (module) => {
   let apiObj = {}
   module.apis.forEach((item) => {
     apiObj[item.name] = (params) => {
-      console.log(params)
-      return new Promise(function (resolve, reject) {
-        // 做一些异步操作
-        setTimeout(function () {
-          console.log('执行完成')
-          resolve('随便什么数据')
-        }, 2000)
+      return axios({
+        url: `${baseUrl.modules.apis[item.name].baseUrl || baseUrl.modules.defaultBaseUrl}${baseUrl.modules.apis[item.name].url}${item.url}`,
+        method: item.method,
+        data: params,
+        headers: headersConfig
       })
     }
   })
