@@ -4,8 +4,7 @@
  * 描述： api
  */
 import axios from 'axios'
-// Vue.prototype.$axios=axios
-export default() => {
+export default(model) => {
   return axios(
     {
       method: 'post',

@@ -6,10 +6,8 @@ import router from './router'
 // import css
 import 'vue-beauty/package/style/vue-beauty.min.css'
 import vueBeauty from 'vue-beauty'
-import axios from 'axios'
 Vue.use(vueBeauty)
 Vue.config.productionTip = false
-Vue.prototype.$axios=axios
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

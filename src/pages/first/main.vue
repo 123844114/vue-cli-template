@@ -51,7 +51,7 @@
   </div>
 </template>
 <script>
-import indexAPIs from '@/apis/index'
+import firstAPIs from '@/apis/firstAPIs'
 export default {
   name: 'first-main',
   data () {
@@ -72,8 +72,8 @@ export default {
       }
     }
   },
-  mounted(){
-    indexAPIs().then((data)=>{
+  mounted () {
+    firstAPIs.add({name: 'jim'}).then((data) => {
       console.log(data)
     })
   }
