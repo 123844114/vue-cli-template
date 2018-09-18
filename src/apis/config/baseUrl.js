@@ -10,10 +10,10 @@ const baseUrl = {
     apis: {
       first: {
         baseUrl: '',
-        url: '/datapaas/api/v1'
+        url: '/todo'
       }
     },
-    defaultBaseUrl: 'http://www.baidu.com'
+    defaultBaseUrl: 'http://www.zhangxiaowei.com:3000'
   }
 }
 export default baseUrl

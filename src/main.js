@@ -9,6 +9,7 @@ import vueBeauty from 'vue-beauty'
 Vue.use(vueBeauty)
 Vue.config.productionTip = false
 /* eslint-disable no-new */
+localStorage.accessToken = 'zhangxiaowei123'
 new Vue({
   el: '#app',
   router,

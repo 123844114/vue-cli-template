@@ -7,6 +7,6 @@
  */
 const headers = {
   Accept: 'application/json; charset=utf-8', // application/json, text/plain, */*
-  accessToken: localStorage.accessToken
+  accessToken: 'localStorage.accessToken'
 }
 export default headers

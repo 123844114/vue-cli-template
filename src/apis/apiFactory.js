@@ -13,7 +13,7 @@ const apiFactory = (module) => {
   module.apis.forEach((item) => {
     apiObj[item.name] = (params) => {
       return axios({
-        url: `${baseUrl.modules.apis[item.name].baseUrl || baseUrl.modules.defaultBaseUrl}${baseUrl.modules.apis[item.name].url}${item.url}`,
+        url: `${baseUrl.modules.apis[module.moduleName].baseUrl || baseUrl.modules.defaultBaseUrl}${baseUrl.modules.apis[module.moduleName].url}${item.url}`,
         method: item.method,
         data: params,
         headers: headersConfig

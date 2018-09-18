@@ -10,12 +10,12 @@ const module = {
     {// 获取列表
       name: 'getList',
       method: 'get',
-      url: '/api'},
+      url: '/'},
     {
       // 新增
       name: 'add',
       method: 'post',
-      url: '/api'
+      url: '/'
     }
   ]
 }
